@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.first-section{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)), url(patan1.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+}
+.navbar{
+    width: 100vw;
+    height: 7rem;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar h1{
+    font-size: 3rem;
+    margin-left: 4rem;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar h1 span:first-child{
+    color: red;
+}
+.navbar h1 span:nth-child(2){
+    color: yellow;
+}
+.navbar h1 span:nth-child(3){
+    color: white;
+}
+.navbar h1 span:nth-child(4){
+    color: blue;
+}
+.navbar h1 span:last-child{
+    color: greenyellow;
+}
+.menu-icon{
+    display: none;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.menu-icon .fa-solid{
+    width: 5rem;
+    height: 3rem;
+    font-size: 3rem;
+
+
+}
+.menu-icon .fa-solid{
+    color: white;
+}
+
+.menu-icon .fa-xmark{
+    display: none;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 25px 50px;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.navbar ul li a::after{
+    width: 0%;
+    content: '';
+    height: 4px;
+    background: orange;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover::after{
+        width: 100%;
+}
+
+/* .navbar::after{
+    content: '';
+    width: 1.2em;
+    height: 1.2rem;
+    background-color: black;
+    display: none;
+} */
+.middle-content{
+    width: 100vw;
+    height: calc(100vh - 7rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middle-content .inner-content{
+    width: 35em;
+    height: auto;
+    text-align: center;
+}
+.middle-content .inner-content .change-content:after{
+    content: '';
+    color: yellowgreen;
+    font-size: 3rem;
+    font-family: 'Rubik Microbe', cursive;
+    animation-name: change;
+    animation-delay: 1s;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+@keyframes change {
+    0%{
+        content: 'Welcome to Heaven';
+    }
+    45%{
+        content: 'Patan Krishna Temple';
+    }
+    75%{
+        content: "Hindu's Temple";
+    }
+    100%{
+        content: 'World Heritage site';
+    }
+}
+.inner-content p{
+    font-size: 1.3rem;
+    color: whitesmoke;
+    font-family: 'Patrick Hand', cursive;
+    word-spacing: 3px;
+}
+.inner-content button{
+    height: 5em;
+    width: 15em;
+    padding: 5px 5px;
+    background: linear-gradient(45deg,rgba(100,0,0,1),rgba(0,0,100,1));
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 1px white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.inner-content button a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.inner-content button:hover{
+    background: linear-gradient(45deg,rgba(100,0,0,0.5),rgba(0,0,100,0.5));
+    transition: background 1s;
+    
+}

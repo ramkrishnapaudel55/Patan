@@ -12,14 +12,14 @@
 }
 .navbar{
     width: 100vw;
-    height: 7rem;
+    height: 4.5rem;
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .navbar h1{
-    font-size: 3rem;
+    font-size: 2rem;
     margin-left: 4rem;
     font-family: 'Poppins', sans-serif;
 }
@@ -68,7 +68,7 @@
 }
 .navbar ul li a{
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -109,7 +109,7 @@
 .middle-content .inner-content .change-content:after{
     content: '';
     color: yellowgreen;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: 'Rubik Microbe', cursive;
     animation-name: change;
     animation-delay: 1s;
@@ -133,14 +133,14 @@
     }
 }
 .inner-content p{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: whitesmoke;
     font-family: 'Patrick Hand', cursive;
     word-spacing: 3px;
 }
 .inner-content button{
-    height: 5em;
-    width: 15em;
+    height: 4em;
+    width: 13em;
     padding: 5px 5px;
     background: linear-gradient(45deg,rgba(100,0,0,1),rgba(0,0,100,1));
     border: none;
@@ -151,7 +151,7 @@
 }
 .inner-content button a{
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
     color: white;
 }
